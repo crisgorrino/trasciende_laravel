@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="styles/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+       <script type="text/javascript" src="scripts/main.js"></script>
     <!-- endbuild -->
     
     <script type="text/javascript">
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
 		        verticalCentered: false,
-		        resize : true,
+		        resize : false,
 		        scrollingSpeed: 700,
 		        easing: 'easeInQuart',
 		        menu: false,
@@ -29,10 +30,10 @@
 		        loopBottom: false,
 		        loopTop: false,
 		        loopHorizontal: true,
-		        autoScrolling: true,
+		        autoScrolling: false,
 		        scrollOverflow: false,
-		        css3: true,
-		        paddingTop: '3em',
+		        css3: false,
+		        paddingTop: '1em',
 		        paddingBottom: '10px',
 		        normalScrollElements: '#element1, .element2',
 		        normalScrollElementTouchThreshold: 5,
@@ -41,6 +42,7 @@
 		        continuousVertical: false,
 		        animateAnchor: true,
 		        sectionSelector: '.section',
+		        scrollOverflow:'true',
 		        slideSelector: '.slide'
 		    });
 		});
@@ -55,26 +57,55 @@
 			<a href="">ENTRAR</a>
 		</div>
 		
-		<div class="section funcion" id="section1">
+		<div class="section segunda" id="section1">
 			<h2>“Tu función, tomar decisiones que favorezcan tu patrimonio, la nuestra, garantizar que tu decisión sea la mejor”</h2>
-			<p>Empresa comprometida con la sociedad mexicana, que forma e integra asesores profesionales consientes de la realidad económica y las necesidades financieras de cada uno de nuestros clientes. Ofreciendo mas allá de productos y servicios financieros, valor y soluciones a quienes hacen negocios con nosotros.
-
-				Confianza, integridad, actitud de servicio, son los principios bajo los cuales formamos y promovemos Asesores Financieros.</p>
-				
-			<p>Las mejores estrategias y los mejores servicios,que coordinados garanticen su tranquilidad y la realización de sus metas.
-
-				Estaremos con usted a lo largo de todas sus metas financieras diseñando planes a la medida enfocados a lograr satisfactoriamente dichas metas y con las mejores estrategias y productos del mercado en cada momento independientemente del distribuidor.</p>
-				
+			<div class="center-cont cf">
+				<p class="left">Empresa comprometida con la sociedad mexicana, que forma e integra asesores profesionales consientes de la realidad económica y las necesidades financieras de cada uno de nuestros clientes. Ofreciendo mas allá de productos y servicios financieros, valor y soluciones a quienes hacen negocios con nosotros.<br>
+					<br>
+					Confianza, integridad, actitud de servicio, son los principios bajo los cuales formamos y promovemos Asesores Financieros.</p>
+					
+				<p class="right">Las mejores estrategias y los mejores servicios,que coordinados garanticen su tranquilidad y la realización de sus metas.<br>
+					<br>
+					Estaremos con usted a lo largo de todas sus metas financieras diseñando planes a la medida enfocados a lograr satisfactoriamente dichas metas y con las mejores estrategias y productos del mercado en cada momento independientemente del distribuidor.</p>
+			</div>
 		</div>
 		
-		<div class="section " id="section2">
-			<h1>Trasciende</h1>
-			<p>Create Beautiful Fullscreen Scrolling Websites</p>
+		<div class="section tipo-de-seguro" id="section2">
+			<header class="cf">
+				<img src="images/header-logo.jpg" class="header-logo" alt="Trasciende">
+				<h3>&iquest;Cual es el tipo de seguro que busca?</h3>
+			</header>
+			
+			<a href=""><img src="images/tipo/vida-off.jpg" alt="" data-src="images/tipo/vida-on.jpg" data-first-src="images/tipo/vida-off.jpg"></a>
+			<a href=""><img src="images/tipo/medicos-off.jpg" alt="" data-src="images/tipo/medicos-on.jpg" data-first-src="images/tipo/medicos-off.jpg"></a>
+			<a href=""><img src="images/tipo/autos-off.jpg" alt="" data-src="images/tipo/autos-on.jpg" data-first-src="images/tipo/autos-off.jpg"></a>
+			<a href=""><img src="images/tipo/negocios-off.jpg" alt="" data-src="images/tipo/negocios-on.jpg" data-first-src="images/tipo/negocios-off.jpg"></a>
+			<a href=""><img src="images/tipo/inversiones-off.jpg" alt="" data-src="images/tipo/inversiones-on.jpg" data-first-src="images/tipo/inversiones-off.jpg"></a>
+			<a href=""><img src="images/tipo/danos-off.jpg" alt="" data-src="images/tipo/danos-on.jpg" data-first-src="images/tipo/danos-off.jpg"></a>
+			
+			<footer>
+				
+			</footer>
+			
 		</div>
 		
-		<div class="section " id="section3">
-			<h1>Trasciende</h1>
-			<p>Create Beautiful Fullscreen Scrolling Websites</p>
+		<div class="section contacto" id="section3">
+			<header class="cf">
+				<img src="images/header-logo.jpg" class="header-logo" alt="Trasciende">
+				<h3>Contacto</h3>
+			</header>
+			<div class="container">
+			<div class="contacto-inner cf">
+				<img src="images/contacto/contactenos-flechas.png" alt="">
+				<div class="contact-text">
+					<h2>Cont&aacute;ctenos</h2>
+					<p>Para encontrar el mejor asesor que se adapte a su tipo de búsqueda, contáctenos y nos comunicaremos con
+						usted personalmente.</p>
+
+					<p>Próximamente la plataforma web le permitirá hacer una búsqueda directa.</p>
+				</div>
+			</div>
+			</div>	
 		</div>
 	
 	</div>
