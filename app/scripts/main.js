@@ -9,4 +9,9 @@ $(document).ready(function(){
 		var img_src =$(this).data('first-src');
 		$(this).attr('src',img_src);	
 	})
+
+	$('.tipodeseg').click(function(){
+		var tipo_seg= $(this).data('name');
+		$('.seguro-seleccionado').val(tipo_seg);
+	});
 });

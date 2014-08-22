@@ -59,7 +59,8 @@ header {
     margin: 0 auto; }
 
 .segunda {
-  height: auto !important; }
+  height: auto !important;
+  padding: 5% 0 !important; }
   .segunda h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
@@ -102,6 +103,42 @@ and (min-width : 1400px) {
     display: block;
     float: left;
     width: 10%; }
+  .contacto .contacto-inner form {
+    display: block;
+    padding: 4% 0;
+    clear: both; }
+    .contacto .contacto-inner form input[type="text"] {
+      border: 1px solid #ccc;
+      color: #061c42;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 22.51%;
+      padding: 1% 1%;
+      outline: none; }
+    .contacto .contacto-inner form .seguro-seleccionado {
+      width: 98% !important;
+      display: block !important;
+      margin: 1% 0;
+      color: #061c42 !important; }
+    .contacto .contacto-inner form input[type="button"] {
+      color: #e56803;
+      border: 3px solid #e56803;
+      background-color: transparent;
+      width: 20%;
+      display: block;
+      padding: 1%;
+      float: right;
+      outline: none; }
+  .contacto .contacto-inner textarea {
+    width: 99.5% !important;
+    display: block !important;
+    margin: 1% 0;
+    border: 1px solid #ccc;
+    color: #061c42;
+    border-radius: 4px;
+    height: 5em;
+    outline: none; }
   .contacto .contacto-inner .contact-text {
     width: 80%;
     float: right; }

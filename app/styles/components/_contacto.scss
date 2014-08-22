@@ -2,9 +2,21 @@
 .container{background-color:#eff0f0; padding:5% 0;}
 		.contacto-inner{width:80%; margin:0 auto;
 			img{display: block; float: left; width: 10%;}
+			
+			form{
+					display: block; padding:4% 0; clear:both;
+					
+					input[type="text"]{border:1px solid #ccc; color:#061c42; border-radius: 4px; display:inline-block; vertical-align: middle; width: 22.51%; padding:1% 1%; outline:none;}
+					.seguro-seleccionado{width:98%!important; display: block!important; margin:1% 0; color:#061c42!important; }
+					
+					input[type="button"]{color:#e56803; border:3px solid #e56803; background-color: transparent; width:20%; display:block; padding:1%; float:right; outline:none;}
+				}
+				
+			textarea{width:99.5%!important; display: block!important; margin:1% 0; border:1px solid #ccc; color:#061c42; border-radius: 4px; height:5em; outline:none;}
 			.contact-text{width:80%; float:right;
 				h2{font-family: 'Noto Sans', sans-serif; font-weight:400; color:#e56803; margin:0;}
 				p{margin:7px 0; color:#061c42; font-family: 'Noto Sans', sans-serif; font-weight:400; font-size: .9em;}
 			}
+			
 		}
 }

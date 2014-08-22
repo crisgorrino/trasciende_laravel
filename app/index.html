@@ -8,56 +8,56 @@
     <title>Trasciende</title>
 
     <!-- build:css styles/components/main.min.css -->
-     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/jquery.fullPage.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
-       <script type="text/javascript" src="scripts/main.js"></script>
+     <link rel="stylesheet" href="styles/jquery.fullPage.css">
     <!-- endbuild -->
-    
-    <script type="text/javascript">
-		$(document).ready(function() {
+   <script type="text/javascript" src="scripts/jquery.js"></script>
+   <script type="text/javascript" src="scripts/main.js"></script>
+   <script type="text/javascript" src="scripts/vendors/jquery.slimscroll.min.js"></script>
+   <script type="text/javascript" src="scripts/vendors/jquery.easings.min.js"></script>	
+   <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+   <script type="text/javascript">
+		$(document).ready(function(){
 		    $('#fullpage').fullpage({
+		    	anchors: ['section0', 'section1', 'section2', 'section3'],
+		    	menu: false,
 		        verticalCentered: false,
 		        resize : false,
-		        scrollingSpeed: 700,
-		        easing: 'easeInQuart',
-		        menu: false,
 		        navigation: false,
-		        slidesNavigation: true,
-		        slidesNavPosition: 'bottom',
-		        loopBottom: false,
-		        loopTop: false,
-		        loopHorizontal: true,
-		        autoScrolling: false,
+		        autoScrolling:false,
 		        scrollOverflow: false,
 		        css3: false,
 		        paddingTop: '1em',
 		        paddingBottom: '10px',
-		        normalScrollElements: '#element1, .element2',
-		        normalScrollElementTouchThreshold: 5,
-		        keyboardScrolling: true,
-		        touchSensitivity: 15,
-		        continuousVertical: false,
 		        animateAnchor: true,
-		        sectionSelector: '.section',
-		        scrollOverflow:'true',
-		        slideSelector: '.slide'
+		        sectionSelector: '.section'
+		    });	
+		     
+		    $('.entrar').click(function(e){
+		    e.preventDefault();
+			    $.fn.fullpage.moveTo(2);
 		    });
+		    
+		    $('.tipo-de-seguro a').click(function(e){
+		    	e.preventDefault();
+			    $.fn.fullpage.moveTo(4);
+		    });
+
+		    
 		});
 </script>
-	
+    
   </head>
   <body>
 	<div id="fullpage">
 		
 		<div class="section home" id="section0">
 			<h1><img src="images/logo.png" class="logo" alt="Trasciende"></h1>
-			<a href="">ENTRAR</a>
+			<a href="" class="entrar">ENTRAR</a>
 		</div>
 		
-		<div class="section segunda" id="section1">
+		<div class="section segunda cf" id="section1">
 			<h2>“Tu función, tomar decisiones que favorezcan tu patrimonio, la nuestra, garantizar que tu decisión sea la mejor”</h2>
 			<div class="center-cont cf">
 				<p class="left">Empresa comprometida con la sociedad mexicana, que forma e integra asesores profesionales consientes de la realidad económica y las necesidades financieras de cada uno de nuestros clientes. Ofreciendo mas allá de productos y servicios financieros, valor y soluciones a quienes hacen negocios con nosotros.<br>
@@ -76,12 +76,24 @@
 				<h3>&iquest;Cual es el tipo de seguro que busca?</h3>
 			</header>
 			
-			<a href=""><img src="images/tipo/vida-off.jpg" alt="" data-src="images/tipo/vida-on.jpg" data-first-src="images/tipo/vida-off.jpg"></a>
-			<a href=""><img src="images/tipo/medicos-off.jpg" alt="" data-src="images/tipo/medicos-on.jpg" data-first-src="images/tipo/medicos-off.jpg"></a>
-			<a href=""><img src="images/tipo/autos-off.jpg" alt="" data-src="images/tipo/autos-on.jpg" data-first-src="images/tipo/autos-off.jpg"></a>
-			<a href=""><img src="images/tipo/negocios-off.jpg" alt="" data-src="images/tipo/negocios-on.jpg" data-first-src="images/tipo/negocios-off.jpg"></a>
-			<a href=""><img src="images/tipo/inversiones-off.jpg" alt="" data-src="images/tipo/inversiones-on.jpg" data-first-src="images/tipo/inversiones-off.jpg"></a>
-			<a href=""><img src="images/tipo/danos-off.jpg" alt="" data-src="images/tipo/danos-on.jpg" data-first-src="images/tipo/danos-off.jpg"></a>
+			<a href="" class="tipodeseg" data-name="Tipo de Seguro Seleccionado: Seguro de Vida" >
+				<img src="images/tipo/vida-off.jpg" alt=""  data-src="images/tipo/vida-on.jpg" data-first-src="images/tipo/vida-off.jpg">
+			</a>	
+			<a href="" class="tipodeseg" data-name="Tipo de Seguro Seleccionado: Seguro M&eacute;dico" >
+				<img src="images/tipo/medicos-off.jpg" alt="" data-src="images/tipo/medicos-on.jpg" data-first-src="images/tipo/medicos-off.jpg">
+			</a>
+			<a href="" class="tipodeseg" data-name="Tipo de Seguro Seleccionado: Seguro de Auto" >
+				<img src="images/tipo/autos-off.jpg" alt="" data-src="images/tipo/autos-on.jpg" data-first-src="images/tipo/autos-off.jpg">
+			</a>
+			<a href="" class="tipodeseg" data-name="Tipo de Seguro Seleccionado: Seguro de Negocios" >
+				<img src="images/tipo/negocios-off.jpg" alt="" data-src="images/tipo/negocios-on.jpg" data-first-src="images/tipo/negocios-off.jpg">
+			</a>
+			<a href="" class="tipodeseg" data-name="Tipo de Seguro Seleccionado: Seguro de Inversiones" >
+				<img src="images/tipo/inversiones-off.jpg" alt="" data-src="images/tipo/inversiones-on.jpg" data-first-src="images/tipo/inversiones-off.jpg">
+			</a>
+			<a href="" class="tipodeseg" data-name="Tipo de Seguro Seleccionado: Seguro de Da&ntilde;os" >
+				<img src="images/tipo/danos-off.jpg" alt="" data-src="images/tipo/danos-on.jpg" data-first-src="images/tipo/danos-off.jpg">
+			</a>
 			
 			<footer>
 				
@@ -90,24 +102,43 @@
 		</div>
 		
 		<div class="section contacto" id="section3">
+			
 			<header class="cf">
 				<img src="images/header-logo.jpg" class="header-logo" alt="Trasciende">
 				<h3>Contacto</h3>
 			</header>
+			
 			<div class="container">
-			<div class="contacto-inner cf">
-				<img src="images/contacto/contactenos-flechas.png" alt="">
-				<div class="contact-text">
-					<h2>Cont&aacute;ctenos</h2>
-					<p>Para encontrar el mejor asesor que se adapte a su tipo de búsqueda, contáctenos y nos comunicaremos con
-						usted personalmente.</p>
-
-					<p>Próximamente la plataforma web le permitirá hacer una búsqueda directa.</p>
+				<div class="contacto-inner cf">
+					<img src="images/contacto/contactenos-flechas.png" alt="">
+					<div class="contact-text">
+						<h2>Cont&aacute;ctenos</h2>
+						<p>Para encontrar el mejor asesor que se adapte a su tipo de búsqueda, contáctenos y nos comunicaremos con
+							usted personalmente.</p>
+	
+						<p>Próximamente la plataforma web le permitirá hacer una búsqueda directa.</p>
+					</div>
+					
+					<form class="contact-form">
+						<input type="text" placeholder="Nombre">
+						<input type="text" placeholder="E-mail">
+						<input type="text" placeholder="Tel&eacute;fono">
+						<input type="text" placeholder="Ciudad">
+						<input type="text" value="Tipo de Seguro:" class="seguro-seleccionado">
+						<textarea placeholder="Mensaje"></textarea>
+						<input type="button" value="ENVIAR">
+					</form>
+				
 				</div>
-			</div>
+			
 			</div>	
 		</div>
+		
+		<footer></footer>
 	
 	</div>
+	
    </body>
+	
+
 </html>
