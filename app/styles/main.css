@@ -14,6 +14,29 @@ header {
     font-size: 1.5em;
     color: #061c42; }
 
+footer {
+  width: 80%;
+  margin: 0 auto; }
+  footer img {
+    width: 19% !important;
+    display: block !important;
+    float: left; }
+  footer > div {
+    width: 70%;
+    float: right; }
+    footer > div p {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: .7em;
+      float: left;
+      color: #a0a1a1; }
+    footer > div a {
+      color: #a0a1a1;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: .7em;
+      float: right;
+      display: block;
+      margin-top: 10px; }
+
 /*helper classes*/
 .left {
   float: left; }
