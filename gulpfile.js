@@ -171,6 +171,19 @@ gulp.task('serve:dist', ['default'], function () {
   });
 });
 
+//clear chache
+var cache = require('gulp-cache')
+gulp.task('clearCache', function() {
+
+  // Still pass the files to clear cache for
+  gulp.src('./lib/*.js')
+    .pipe(cache.clear());
+
+  // Or, just call this for everything
+  cache.clearAll();
+});
+
+
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
   runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);

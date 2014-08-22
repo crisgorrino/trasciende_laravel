@@ -82,8 +82,9 @@ footer {
     margin: 0 auto; }
 
 .segunda {
-  height: auto !important;
-  padding: 5% 0 !important; }
+  padding: 3% 0 3% 0 !important;
+  margin-top: 5%;
+  background-color: #fff; }
   .segunda h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
